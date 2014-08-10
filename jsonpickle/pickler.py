@@ -76,6 +76,18 @@ class Pickler(object):
         return value
 
     def _mkref(self, obj):
+        '''
+        Returns True if a reference to the object
+        has been added to self._objs (because it
+        was not in there before) or if .unpickleable
+        is False or .make_refs is False.
+        
+        The reference created to the object is
+        the current length of the self._objs
+        
+        Returns False if the reference already
+        existed in self._objs for this object id.
+        '''
         objid = id(obj)
         if objid not in self._objs:
             new_id = len(self._objs)

@@ -8,3 +8,8 @@
 /dist
 /env*
 /tags
+
+#Eclipse
+.project
+.pydevproject
+.settings

@@ -1,4 +1,4 @@
-*.pyc
+*.py[cod]
 *.egg-info
 *.swp
 *#*
@@ -9,7 +9,11 @@
 /env*
 /tags
 
-#Eclipse
+__pycache__
+.tox/
+
+
+#Eclipse IDE
 .project
 .pydevproject
 .settings

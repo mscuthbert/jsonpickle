@@ -13,10 +13,35 @@ Bug reports and merge requests are encouraged at the
 Install
 =======
 
+Install from pip for the latest stable release:
+
 ::
 
-    python setup.py install
+    pip install jsonpickle
+
+Install from github for the latest changes:
+
+::
+
+    pip install git+https://github.com/jsonpickle/jsonpickle.git
+
+If you have the files checked out for development:
+
+::
+
+    git clone https://github.com/jsonpickle/jsonpickle.git
+    cd jsonpickle
+    python setup.py develop
+
+
+jsonpickleJS
+============
+`jsonpickleJS <https://github.com/cuthbertLab/jsonpickleJS>`_
+is a javascript implementation of jsonpickle by Michael Scott Cuthbert.
+jsonpickleJS can be extremely useful for projects that have parallel data
+structures between Python and Javascript.
 
 License
 =======
 Licensed under the BSD License. See COPYING for details.
+See jsonpickleJS/LICENSE for details about the jsonpickleJS license.
